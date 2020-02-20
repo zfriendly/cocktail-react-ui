@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 
-function Nav() {
+function Nav(props) {
   return (
     <nav className="nav">
-      <div className="cocktail">Drink 1</div>
-      <div className="cocktail">Drink 2</div>
-      <div className="cocktail">Drink 3</div>
-      <div className="cocktail">Drink 4</div>
+      {props.content.map((something, i) => (
+        <div
+          onClick={e => props.displayCocktail(i)}
+          key={i}
+          className="cocktail"
+        >
+          {something.name.toUpperCase()}
+        </div>
+      ))}
     </nav>
   );
 }

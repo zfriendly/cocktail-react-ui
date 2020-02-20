@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  font-family: "News Cycle", sans-serif;
+}
 .header {
   background-color: #0f4c81;
   color: white;
@@ -9,10 +13,14 @@
 }
 .container {
   border: 2px solid #0f4c81;
-  min-height: 50vh;
+  height: 50%;
   margin: 0 auto;
   width: 50%;
   background-color: #f5b895;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .window {
   display: flex;
@@ -21,6 +29,7 @@
   justify-content: center;
   background-color: #b5c7d3;
   height: 100vh;
+  box-sizing: border-box;
 }
 .nav {
   display: flex;
@@ -31,9 +40,40 @@
   color: white;
 }
 .cocktail {
-  border: 1px solid black;
   height: 100%;
   width: 100%;
   text-align: center;
   font-family: "News Cycle", sans-serif;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.cocktail:hover {
+  background-color: #658dc6;
+}
+.drinkInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+.drinkText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 40%;
+  font-size: 20px;
+  color: #0f4c81;
+}
+
+.drinkImage {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  /* border: 10px 1solid #658dc6; */
+  box-shadow: 15px 15px #658dc6;
+}
+span {
+  color: white;
 }
