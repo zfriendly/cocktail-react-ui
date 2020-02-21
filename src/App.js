@@ -20,8 +20,13 @@ class App extends Component {
           let drink = {
             name: data.drinks[0].strDrink,
             image: data.drinks[0].strDrinkThumb,
-            ingredient: data.drinks[0].strIngredient1,
-            instructions: data.drinks[0].strInstructions
+            ingredient1: data.drinks[0].strIngredient1,
+            ingredient2: data.drinks[0].strIngredient2,
+            ingredient3: data.drinks[0].strIngredient3,
+            ingredient4: data.drinks[0].strIngredient4,
+            ingredient5: data.drinks[0].strIngredient5,
+            instructions: data.drinks[0].strInstructions,
+            glass: data.drinks[0].strGlass
           };
           let cocktails = this.state.drinks;
           cocktails.push(drink);

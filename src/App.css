@@ -43,8 +43,9 @@
   height: 100%;
   width: 100%;
   text-align: center;
+  font-size: 85%;
   font-family: "News Cycle", sans-serif;
-  padding-top: 5px;
+  padding-top: 2%;
   cursor: pointer;
 }
 .cocktail:hover {
@@ -55,7 +56,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 50px;
+  padding-bottom: 15%;
 }
 .drinkText {
   display: flex;
