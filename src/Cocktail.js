@@ -10,7 +10,7 @@ function Cocktail(props) {
       ></div>
       <div className="drinkText">
         <div className="drinkName">
-          <span>Drink Name: </span>
+          <span>Cocktail: </span>
           {props.content.name}
         </div>
         <div className="drinkIngredient">
